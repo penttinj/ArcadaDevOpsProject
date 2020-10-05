@@ -1,0 +1,24 @@
+{
+  "name": "devops_pro02",
+  "version": "1.0.0",
+  "description": "frontend for devops s3 bucket, school",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penttinj/arcada-devops-project.git"
+  },
+  "keywords": [
+    "node",
+    "aws",
+    "s3"
+  ],
+  "author": "With Kristoffer, Fredrik and Johan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/penttinj/arcada-devops-project/issues"
+  },
+  "homepage": "https://github.com/penttinj/arcada-devops-project#readme"
+}
