@@ -9,8 +9,11 @@
   color: white;
 }
 
-.App-logo {
-  height: 40vmin;
+.arcada-logo {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  height: 3.5vw;
   pointer-events: none;
 }
 
@@ -20,17 +23,41 @@
 }
 
 .App-header {
+  background-color: #1a1c22;
   min-height: 200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 3vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1c22;
+  width: 50vw;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  background-color: #6e768f;
+}
+
+.ButtonBanner {
+  font-size: calc(10px + 1vmin);
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+  padding-bottom: 1rem;
+}
+
+.UserListBanner {
+  font-size: calc(10px + 1vmin);
+  background: blueviolet;
 }
 
 @keyframes App-logo-spin {

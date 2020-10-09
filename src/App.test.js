@@ -1,9 +1,23 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import {render} from '@testing-library/react';
 import App from './App';
 
-test('renders get users button', () => {
-  const { getByText } = render(<App />);
-  const usersButton = getByText(/Get Users/i);
-  expect(usersButton).toBeInTheDocument();
-});
+describe("Users button behavior", () => {
+
+  test('renders get users button', () => {
+    const {getByRole} = render(<App />);
+    const usersButton = getByRole('button');
+    expect(usersButton).toBeInTheDocument();
+    expect(usersButton.innerHTML).toBe("Get Users");
+  });
+
+  test("click button and change buttontext to hide users", () => {
+    const {getByRole} = render(<App />);
+    const usersButton = getByRole('button');
+    usersButton.click();
+    expect(usersButton.innerHTML).toBe("Hide Users");
+  })
+})
+
+
+// todo: click button, expect text on button to change, then find a list of users
