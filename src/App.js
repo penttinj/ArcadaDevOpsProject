@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import UserList from "./components/UserList";
 import './App.css';
+import logo from "./logo.svg"
 
 
 
@@ -29,10 +30,21 @@ function App() {
     <div className="App">
       <div className="layout">
         <header className="App-header">
-
+          <img className="arcada-logo" src={logo} alt="Arcada Logo"></img>
+          <div className="left">Software development process - DevOps</div>
+          <div className="right">Kristoffer<br /> Fredrik <br />Johan</div>
         </header>
         <div className="ButtonBanner">
-          <button className="Button" onClick={handleClick} className="Button">
+          <p>
+            This is the button will will get users and list them down below. <br />
+          This is the button will will get users and list them down below. <br />
+          This is the button will will get users and list them down below. <br />
+          This is the button will will get users and list them down below. <br />
+          This is the button will will get users and list them down below. <br />
+          This is the button will will get users and list them down below. <br />
+          This is the button will will get users and list them down below. <br />
+          </p>
+          <button className="Button" onClick={handleClick}>
             {clicked ? "Hide Users" : "Get Users"}
           </button>
         </div>
