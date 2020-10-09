@@ -20,4 +20,4 @@ describe("Users button behavior", () => {
 })
 
 
-// todo: click button, expect text on button to change, then find a list of users
+// todo: click button, then find a list of users
