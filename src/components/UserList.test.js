@@ -13,3 +13,8 @@ test('renders list of users', () => {
     expect(pelle).toBeInTheDocument();
   });
   
+test("This test should fail", () => {
+    const { getByText } = render(<UserList data={mockData}/>);
+    const pelle = getByText(/asdasdqweqweqwe_fail/i);
+    expect(pelle).toBeInTheDocument();
+})

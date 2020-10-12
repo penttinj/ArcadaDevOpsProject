@@ -1,4 +1,0 @@
-#!/bin/sh
-# Run the project's tests before a commit
-# If a non-zero exit code is returned then the commit is aborted.
-CI=true npm run test
