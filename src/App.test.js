@@ -17,7 +17,14 @@ describe("Users button behavior", () => {
     usersButton.click();
     expect(usersButton.innerHTML).toBe("Hide Users");
   })
-})
+});
+
+test('renders users header', () => {
+  const {getByRole} = render(<App />);
+  const usersHeader = getByRole('h1');
+  expect(usersHeader).toBeInTheDocument();
+  expect(usersHeader.innerHTML).toBe("Users");
+});
 
 
 // todo: click button, then find a list of users

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import UserList from "./components/UserList";
 import './App.css';
 import logo from "./logo.svg"
@@ -35,18 +35,19 @@ function App() {
           <div className="right">Kristoffer Kuvaja-Adolfsson<br />Fredrik Ståhl<br />Johan Penttinen</div>
         </header>
         <div className="ButtonBanner">
-          <p>
+          <h1 className="UsersHeader">Users</h1>
+            <p>
             This is the button will will get users and list them down below. <br />
-          This is the button will will get users and list them down below. <br />
-          This is the button will will get users and list them down below. <br />
-          This is the button will will get users and list them down below. <br />
-          This is the button will will get users and list them down below. <br />
-          This is the button will will get users and list them down below. <br />
-          This is the button will will get users and list them down below. <br />
-          </p>
-          <button className="Button" onClick={handleClick}>
-            {clicked ? "Hide Users" : "Get Users"}
-          </button>
+            This is the button will will get users and list them down below. <br />
+            This is the button will will get users and list them down below. <br />
+            This is the button will will get users and list them down below. <br />
+            This is the button will will get users and list them down below. <br />
+            This is the button will will get users and list them down below. <br />
+            This is the button will will get users and list them down below. <br />
+            </p>
+            <button className="Button" onClick={handleClick}>
+              {clicked ? "Hide Users" : "Get Users"}
+            </button>
         </div>
         <div className="UserListBanner">
           {clicked ? <UserList data={users} /> : ""}
