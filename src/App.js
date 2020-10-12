@@ -35,7 +35,7 @@ function App() {
           <div className="right">Kristoffer Kuvaja-Adolfsson<br />Fredrik Ståhl<br />Johan Penttinen</div>
         </header>
         <div className="ButtonBanner">
-          <h1 className="UsersHeader">Users</h1>
+          <h1 className="UsersHeading">Users</h1>
             <p>
             This is the button will will get users and list them down below. <br />
             This is the button will will get users and list them down below. <br />

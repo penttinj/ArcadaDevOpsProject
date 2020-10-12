@@ -20,10 +20,9 @@ describe("Users button behavior", () => {
 });
 
 test('renders users header', () => {
-  const {getByRole} = render(<App />);
-  const usersHeader = getByRole('h1');
-  expect(usersHeader).toBeInTheDocument();
-  expect(usersHeader.innerHTML).toBe("Users");
+  const {container} = render(<App />);
+  const buttonHeading = container.querySelector('h1')
+  expect(buttonHeading.textContent).toBe('Users');
 });
 
 
