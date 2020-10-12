@@ -32,7 +32,7 @@ function App() {
         <header className="App-header">
           <img className="arcada-logo" src={logo} alt="Arcada Logo"></img>
           <div className="left">Software development process - DevOps</div>
-          <div className="right">Kristoffer<br /> Fredrik <br />Johan</div>
+          <div className="right">Kristoffer Kuvaja-Adolfsson<br />Fredrik Ståhl<br />Johan Penttinen</div>
         </header>
         <div className="ButtonBanner">
           <p>
