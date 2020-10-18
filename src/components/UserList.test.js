@@ -13,3 +13,8 @@ test('renders list of users', () => {
     expect(pelle).toBeInTheDocument();
   });
   
+test("Finds waldo", () => {
+    const { getByText } = render(<UserList />);
+    const found = getByText(/waldo/i);
+    expect(found).toBeInTheDocument();
+})
