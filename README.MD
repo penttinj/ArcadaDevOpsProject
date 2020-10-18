@@ -1,6 +1,9 @@
 # Arcada DevOps 2020 Project
 *With Kristoffer, Fredrik and Johan*  
-Yeet 🦆 
+  
+Yeet 🦆  
+  
+This project is built in React and uses AWS S3 bucket to collect information that is then displayed within the application.
 
 ## Installation
 Clone and *(change directory then)* setup with npm install, run with npm start`
