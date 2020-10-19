@@ -37,13 +37,9 @@ function App() {
         <div className="ButtonBanner">
           <h1 className="UsersHeading">Users</h1>
             <p>
-            This is the button will will get users and list them down below. <br />
-            This is the button will will get users and list them down below. <br />
-            This is the button will will get users and list them down below. <br />
-            This is the button will will get users and list them down below. <br />
-            This is the button will will get users and list them down below. <br />
-            This is the button will will get users and list them down below. <br />
-            This is the button will will get users and list them down below. <br />
+            The button below will get IDs and Usernames from our overflowing S3 bucket.</p>
+            <p>
+            It will then paste them below for your convenience.
             </p>
             <button className="Button" onClick={handleClick}>
               {clicked ? "Hide Users" : "Get Users"}
